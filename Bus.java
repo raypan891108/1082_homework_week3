@@ -5,8 +5,8 @@ public class Bus extends Car {
     Scanner scn = new Scanner(System.in);
 
     public Bus(){
+        super();
         String newpeoplenum,newdoornum,newcompany;
-
         System.out.print("peoplenum:");
         newpeoplenum = scn.nextLine();
         setpeoplenum(newpeoplenum);
@@ -22,12 +22,7 @@ public class Bus extends Car {
 
     public void showinfo(){
         System.out.println("bus");
-        System.out.println("color:" + getcolor());
-        System.out.println("capacity:" + getcapacity());
-        System.out.println("powertype:" + getpowertype());
-        System.out.println("weight:" + getweight());
-        System.out.println("displacement:" + getdisplacement());
-        System.out.println("year:" + getyear());
+        super.showinfo();
         System.out.println("peoplenum:" + getpeoplenum());
         System.out.println("doornum:" + getdoornum());
         System.out.println("company:" + getcompany() + "\n");
