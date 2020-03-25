@@ -4,6 +4,7 @@ public class Sedan extends Car {
     private String type,use,peoplenum;
     Scanner scn = new Scanner(System.in);
     public Sedan(){
+        super();
         String newtype,newuse,newpeoplenum;
         System.out.print("type:");
         newtype = scn.nextLine();
@@ -19,13 +20,7 @@ public class Sedan extends Car {
     }
 
     public void showinfo(){
-        System.out.println("Sedan");
-        System.out.println("color:" + getcolor());
-        System.out.println("capacity:" + getcapacity());
-        System.out.println("powertype:" + getpowertype());
-        System.out.println("weight:" + getweight());
-        System.out.println("displacement:" + getdisplacement());
-        System.out.println("year:" + getyear());
+        super.showinfo();
         System.out.println("type:" + gettype());
         System.out.println("use:" + getuse() + "\n");
     }
