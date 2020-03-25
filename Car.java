@@ -1,7 +1,12 @@
 import java.util.Scanner;
 
 class Car{
-    private String color,capacity,powertype,weight,displacement,year;
+    private String color;
+	private String capacity;
+	private String powertype;
+	private String weight;
+	private String displacement;
+	private String year;
     Scanner scn = new Scanner(System.in);
 
     public Car() {
@@ -32,7 +37,6 @@ class Car{
     }
     
     public void showinfo(){
-        System.out.println("car");
         System.out.println("color:" + getcolor());
         System.out.println("capacity:" + getcapacity());
         System.out.println("powertype:" + getpowertype());
@@ -85,8 +89,5 @@ class Car{
     public String getyear(){
         return this.year;
     }
-
-	public void truckshowinfo() {
-	}
 
 }
