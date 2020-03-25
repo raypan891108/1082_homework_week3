@@ -4,6 +4,7 @@ public class Truck extends Car{
     private String goodscapacity,tairsnum;
     Scanner scn = new Scanner(System.in);
     public Truck(){
+        super();
         String newgoodscapacity,newtairsnum;
 
         System.out.print("goodscapacity:");
@@ -17,12 +18,7 @@ public class Truck extends Car{
 
     public void showinfo(){
         System.out.println("truck");
-        System.out.println("color:" + getcolor());
-        System.out.println("capacity:" + getcapacity());
-        System.out.println("powertype:" + getpowertype());
-        System.out.println("weight:" + getweight());
-        System.out.println("displacement:" + getdisplacement());
-        System.out.println("year:" + getyear());
+        super.showinfo();
         System.out.println("goodscapacity:" + getgoodscapacity());
         System.out.println("tairsnum:" + gettairsnum() + "\n");
     }
